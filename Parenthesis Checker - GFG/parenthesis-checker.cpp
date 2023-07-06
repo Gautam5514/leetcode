@@ -17,9 +17,9 @@ class Solution
             st.push(i); 
             else {
                 if(st.size() == 0) return false; 
-                char ch = st.top(); 
+                char c = st.top(); 
                 st.pop(); 
-                if((i == ')' and ch == '(') or  (i == ']' and ch == '[') or (i == '}' and ch == '{')) continue;
+                if((i == ')' and c == '(') or  (i == ']' and c == '[') or (i == '}' and c == '{')) continue;
                 else return false;
             }
         }
